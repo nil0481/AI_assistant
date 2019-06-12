@@ -61,6 +61,10 @@ if 1:
         song=os.listdir(mdir)
         #print (song)
         os.startfile(os.path.join(mdir,song[random.randint(0,10)]))
+    elif 'movie' in said or 'movies' in said:
+        movdir='D:\Movies'
+        movie=os.listdir(movdir)
+        os.startfile(os.path.join(movdir,movie[random.randint(0,21)]))
     elif 'open youtube' in said:
         speak("Opening Youtube")
         chrome_path="C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
